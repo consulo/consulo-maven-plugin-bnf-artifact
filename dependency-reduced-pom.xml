@@ -4,7 +4,7 @@
   <groupId>consulo.maven</groupId>
   <artifactId>bnf-artifact</artifactId>
   <name>Consulo Maven BNF artifact</name>
-  <version>3.7</version>
+  <version>3.8</version>
   <prerequisites>
     <maven>3.6</maven>
   </prerequisites>

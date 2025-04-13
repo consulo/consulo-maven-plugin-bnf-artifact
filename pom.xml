@@ -108,7 +108,7 @@
         <dependency>
             <groupId>consulo</groupId>
             <artifactId>consulo-project-content-api</artifactId>
-            <version>3-20250412.150717-916</version>
+            <version>3-20250410.152901-908</version>
         </dependency>
 
         <dependency>
