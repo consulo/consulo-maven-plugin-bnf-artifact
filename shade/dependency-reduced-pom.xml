@@ -4,7 +4,7 @@
   <groupId>consulo.maven</groupId>
   <artifactId>bnf-artifact</artifactId>
   <name>Consulo Maven BNF artifact</name>
-  <version>3.8</version>
+  <version>3.10</version>
   <prerequisites>
     <maven>3.6</maven>
   </prerequisites>
@@ -27,31 +27,10 @@
               <goal>shade</goal>
             </goals>
             <configuration>
-              <relocations>
-                <relocation>
-                  <pattern>consulo</pattern>
-                  <shadedPattern>maven.bnf.consulo</shadedPattern>
-                </relocation>
-                <relocation>
-                  <pattern>org.intellij</pattern>
-                  <shadedPattern>maven.bnf.org.intellij</shadedPattern>
-                </relocation>
-                <relocation>
-                  <pattern>org.jetbrains</pattern>
-                  <shadedPattern>maven.bnf.org.jetbrains</shadedPattern>
-                </relocation>
-              </relocations>
-              <transformers>
-                <transformer />
-              </transformers>
               <artifactSet>
                 <includes>
-                  <include>consulo:*</include>
-                  <include>consulo.plugin:*</include>
+                  <include>${project.groupId}:bnf-artifact-shade-with-relocation</include>
                 </includes>
-                <excludes>
-                  <exclude>kava:*</exclude>
-                </excludes>
               </artifactSet>
             </configuration>
           </execution>
