@@ -58,6 +58,14 @@
                                     <pattern>consulo</pattern>
                                     <shadedPattern>maven.bnf.consulo</shadedPattern>
                                 </relocation>
+                                <relocation>
+                                    <pattern>org.intellij</pattern>
+                                    <shadedPattern>maven.bnf.org.intellij</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>org.jetbrains</pattern>
+                                    <shadedPattern>maven.bnf.org.jetbrains</shadedPattern>
+                                </relocation>
                             </relocations>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
@@ -65,6 +73,7 @@
                             <artifactSet>
                                 <includes>
                                     <include>consulo:*</include>
+                                    <include>consulo.plugin:*</include>
                                 </includes>
                                 <excludes>
                                     <exclude>kava:*</exclude>
