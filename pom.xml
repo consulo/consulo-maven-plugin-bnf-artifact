@@ -4,7 +4,7 @@
 
     <groupId>consulo.maven</groupId>
     <artifactId>bnf-artifact</artifactId>
-    <version>3.7</version>
+    <version>3.8</version>
     <packaging>jar</packaging>
 
     <name>Consulo Maven BNF artifact</name>
@@ -101,8 +101,34 @@
 
         <dependency>
             <groupId>consulo</groupId>
+            <artifactId>consulo-project-api</artifactId>
+            <version>3-20250410.152859-908</version>
+        </dependency>
+
+        <dependency>
+            <groupId>consulo</groupId>
+            <artifactId>consulo-project-content-api</artifactId>
+            <version>3-20250412.150717-916</version>
+        </dependency>
+
+        <dependency>
+            <groupId>consulo</groupId>
             <artifactId>consulo-language-api</artifactId>
             <version>3-20250410.152728-908</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>consulo</groupId>
+                    <artifactId>consulo-project-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>consulo</groupId>
+                    <artifactId>:consulo-project-content-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>consulo</groupId>
+                    <artifactId>consulo-application-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
@@ -110,6 +136,10 @@
             <artifactId>consulo-language-impl</artifactId>
             <version>3-20250410.152752-697</version>
             <exclusions>
+                <exclusion>
+                    <groupId>consulo</groupId>
+                    <artifactId>consulo-project-api</artifactId>
+                </exclusion>
                 <exclusion>
                     <groupId>consulo</groupId>
                     <artifactId>consulo-language-api</artifactId>
@@ -127,6 +157,16 @@
             <groupId>consulo</groupId>
             <artifactId>consulo-document-impl</artifactId>
             <version>3-20250410.152600-908</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>consulo</groupId>
+                    <artifactId>consulo-project-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>consulo</groupId>
+                    <artifactId>consulo-application-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
@@ -153,6 +193,10 @@
                 <exclusion>
                     <groupId>consulo</groupId>
                     <artifactId>consulo-language-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>consulo</groupId>
+                    <artifactId>consulo-project-api</artifactId>
                 </exclusion>
                 <exclusion>
                     <groupId>consulo</groupId>
@@ -184,6 +228,14 @@
             <artifactId>consulo.devkit-grammar.kit.core</artifactId>
             <version>3-20250410.174349-3405</version>
             <exclusions>
+                <exclusion>
+                    <groupId>consulo</groupId>
+                    <artifactId>consulo-project-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>consulo</groupId>
+                    <artifactId>consulo-application-api</artifactId>
+                </exclusion>
                 <exclusion>
                     <groupId>consulo</groupId>
                     <artifactId>consulo-language-api</artifactId>
