@@ -96,31 +96,31 @@
         <dependency>
             <groupId>consulo</groupId>
             <artifactId>consulo-application-api</artifactId>
-            <version>3-20250410.152338-910</version>
+            <version>3-SNAPSHOT</version>
         </dependency>
 
         <dependency>
             <groupId>consulo</groupId>
             <artifactId>consulo-component-impl</artifactId>
-            <version>3-20250410.152455-697</version>
+            <version>3-SNAPSHOT</version>
         </dependency>
 
         <dependency>
             <groupId>consulo</groupId>
             <artifactId>consulo-project-api</artifactId>
-            <version>3-20250410.152859-908</version>
+            <version>3-SNAPSHOT</version>
         </dependency>
 
         <dependency>
             <groupId>consulo</groupId>
             <artifactId>consulo-project-content-api</artifactId>
-            <version>3-20250410.152901-908</version>
+            <version>3-SNAPSHOT</version>
         </dependency>
 
         <dependency>
             <groupId>consulo</groupId>
             <artifactId>consulo-language-api</artifactId>
-            <version>3-20250410.152728-908</version>
+            <version>3-SNAPSHOT</version>
             <exclusions>
                 <exclusion>
                     <groupId>consulo</groupId>
@@ -140,7 +140,7 @@
         <dependency>
             <groupId>consulo</groupId>
             <artifactId>consulo-language-impl</artifactId>
-            <version>3-20250410.152752-697</version>
+            <version>3-SNAPSHOT</version>
             <exclusions>
                 <exclusion>
                     <groupId>consulo</groupId>
@@ -156,13 +156,13 @@
         <dependency>
             <groupId>consulo</groupId>
             <artifactId>consulo-disposer-impl</artifactId>
-            <version>3-20250410.152556-908</version>
+            <version>3-SNAPSHOT</version>
         </dependency>
 
         <dependency>
             <groupId>consulo</groupId>
             <artifactId>consulo-document-impl</artifactId>
-            <version>3-20250410.152600-908</version>
+            <version>3-SNAPSHOT</version>
             <exclusions>
                 <exclusion>
                     <groupId>consulo</groupId>
@@ -178,7 +178,7 @@
         <dependency>
             <groupId>consulo</groupId>
             <artifactId>consulo-platform-impl</artifactId>
-            <version>3-20250410.152855-908</version>
+            <version>3-SNAPSHOT</version>
             <exclusions>
                 <exclusion>
                     <groupId>net.java.dev.jna</groupId>
@@ -194,7 +194,7 @@
         <dependency>
             <groupId>consulo</groupId>
             <artifactId>consulo-test-impl</artifactId>
-            <version>3-20250410.152943-908</version>
+            <version>3-SNAPSHOT</version>
             <exclusions>
                 <exclusion>
                     <groupId>consulo</groupId>
@@ -214,25 +214,25 @@
         <dependency>
             <groupId>consulo</groupId>
             <artifactId>consulo-util-nodep</artifactId>
-            <version>3-20250410.153031-908</version>
+            <version>3-SNAPSHOT</version>
         </dependency>
 
         <dependency>
             <groupId>consulo</groupId>
             <artifactId>consulo-util-lang</artifactId>
-            <version>3-20250410.153027-908</version>
+            <version>3-SNAPSHOT</version>
         </dependency>
 
         <dependency>
             <groupId>consulo</groupId>
             <artifactId>consulo-util-collection-via-trove</artifactId>
-            <version>3-20250410.153010-908</version>
+            <version>3-SNAPSHOT</version>
         </dependency>
 
         <dependency>
             <groupId>consulo.plugin</groupId>
             <artifactId>consulo.devkit-grammar.kit.core</artifactId>
-            <version>3-20250410.174349-3405</version>
+            <version>3-SNAPSHOT</version>
             <exclusions>
                 <exclusion>
                     <groupId>consulo</groupId>
