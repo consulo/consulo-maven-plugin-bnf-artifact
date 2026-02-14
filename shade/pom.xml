@@ -4,7 +4,7 @@
 
     <groupId>consulo.maven</groupId>
     <artifactId>bnf-artifact</artifactId>
-    <version>3.17</version>
+    <version>3.18</version>
     <packaging>jar</packaging>
 
     <name>Consulo Maven BNF artifact</name>
